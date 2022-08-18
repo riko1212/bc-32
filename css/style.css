@@ -52,12 +52,17 @@ body {
   margin: -1px;
 }
 .btn {
+  min-width: 160px;
+  height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
 }
 
 .pre-title {
@@ -93,6 +98,20 @@ body {
   padding-bottom: 32px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 130px;
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
 .header-link,
 .header-tel {
   font-weight: 600;
@@ -107,6 +126,10 @@ body {
   color: var(--accent-color);
 }
 
+.header-connect {
+  margin-left: auto;
+}
+
 /* .header-tel {
   font-weight: 600;
   font-size: 12px;
@@ -117,12 +140,20 @@ body {
 
 .header-btn {
   color: var(--first-btn-color);
+  margin-left: 30px;
 }
 
 /*----------- hero-------------- */
 
 .hero {
-  background-color: gray;
+}
+
+.hero-list {
+  width: 100px;
+}
+
+.hero-container {
+  display: flex;
 }
 
 .hero-link {
@@ -134,9 +165,10 @@ body {
 }
 
 .hero-content {
+  background-color: gray;
   padding: 272px 100px 208px 100px;
+  flex-grow: 1;
 }
-
 .hero-pre-title {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: var(--typical-mb);
@@ -157,6 +189,20 @@ body {
 }
 
 /*----------- about-------------- */
+
+.about-list {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-content {
+  max-width: 470px;
+}
 
 .about-pre-title {
   color: #303030;
@@ -197,9 +243,15 @@ body {
   margin-bottom: 44px;
 }
 
+.prices-wrap {
+  display: flex;
+  gap: 30px;
+}
+
 .prices-list {
   border: 1px solid #ffffff;
   padding: 30px 20px;
+  width: calc(50% - 15px);
 }
 
 .prices-item-text {
@@ -207,6 +259,19 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .prices-item + .prices-item {
+  margin-top: var(--typical-mb);
+} */
+
+.prices-item:not(:last-child) {
+  margin-bottom: var(--typical-mb);
 }
 
 .prices-btn {
@@ -217,12 +282,36 @@ body {
 
 /*----------- benefits-------------- */
 
+.benefits-container {
+  display: flex;
+}
+
+.benefits-content {
+  max-width: 500px;
+}
+
+.benefits-list {
+  display: flex;
+  width: calc(50% - 15px);
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-right: 30px;
+}
+
 .benefits-item {
   border: 1px solid #000000;
   width: 170px;
   height: 133px;
   padding: 20px 24px;
   text-align: center;
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
 }
 
 .benefits-item > span {
@@ -282,6 +371,17 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ff6c00;
+}
+
+.barbers-list {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.barbers-item {
+  width: calc((100% - 60px) / 3);
 }
 
 /*----------- gallery-------------- */
