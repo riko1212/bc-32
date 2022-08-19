@@ -69,7 +69,18 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pre-title::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: currentColor;
 }
 
 .title {
@@ -166,6 +177,14 @@ body {
 
 .hero-content {
   background-color: gray;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../img/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 272px 100px 208px 100px;
   flex-grow: 1;
 }
@@ -181,6 +200,26 @@ body {
   letter-spacing: 0.05em;
   color: var(--first-title-color);
   margin-bottom: var(--typical-mb);
+  display: flex;
+  align-items: baseline;
+}
+
+.hero-title:hover::before,
+.hero-title:hover {
+  color: teal;
+}
+
+.hero-title::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/about-img-2.jpeg);
+  background-size: cover;
+}
+
+.hero-title::after {
+  content: '!';
+  color: rgb(144, 255, 80);
 }
 
 .hero-after-title {
@@ -264,6 +303,20 @@ body {
 .prices-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.prices-item::after {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+}
+
+.prices-item-text:last-child {
+  order: 1;
 }
 
 /* .prices-item + .prices-item {
@@ -371,6 +424,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ff6c00;
+  margin-bottom: 30px;
 }
 
 .barbers-list {
@@ -383,6 +437,39 @@ body {
 .barbers-item {
   width: calc((100% - 60px) / 3);
 }
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.barbers-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #ffffff;
+}
+
+/* .barbers-soc-icon {
+  fill: currentColor;
+} */
+
+.barbers-soc-link:hover {
+  background-color: teal;
+  fill: coral;
+}
+
+/* .barbers-soc-link:hover {
+  background-color: teal;
+}
+
+.barbers-soc-link:hover .barbers-soc-icon {
+  fill: coral;
+} */
 
 /*----------- gallery-------------- */
 
