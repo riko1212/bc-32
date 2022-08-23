@@ -104,7 +104,9 @@ body {
 /*----------- heder-------------- */
 
 .header {
-  background-color: gray;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -159,8 +161,27 @@ body {
 .hero {
 }
 
-.hero-list {
+.hero-soc {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 27px;
+  padding-bottom: 40px;
+}
+
+.hero-list {
+  display: flex;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-list::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
 }
 
 .hero-container {
