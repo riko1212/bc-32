@@ -1,0 +1,51 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  @extend %align-list;
+}
+
+.header-logo {
+  margin-right: 130px;
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-connect {
+  margin-left: auto;
+}
+
+/* .header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+} */
+
+.header-btn {
+  color: var(--first-btn-color);
+  margin-left: 31px;
+}

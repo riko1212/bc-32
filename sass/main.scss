@@ -1,0 +1,20 @@
+@import './utils/fonts';
+@import './utils/vars';
+@import './base/reset';
+@import './base/common';
+@import './utils/placeholders';
+
+@import './components/container';
+@import './components/btn';
+@import './components/pre-title';
+@import './components/title';
+@import './components/modal';
+@import './components/after-title';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/prices';
+@import './layouts/benefits';
+@import './layouts/barbers';
+@import './layouts/gallery';
