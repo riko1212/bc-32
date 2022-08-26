@@ -47,6 +47,8 @@ address {
 img {
   display: block;
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -62,8 +64,20 @@ body {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 106px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .is-hidden {
@@ -93,12 +107,25 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .btn {
@@ -684,8 +711,17 @@ body {
 }
 
 .card-list__item {
-  width: calc((100% - 60px) / 3);
-  position: relative;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card-list__top-wrap {
@@ -741,5 +777,16 @@ body {
 } */
 .gallery-pre-title {
   color: #303030;
-  margin-bottom: 44px;
+  margin-bottom: 71px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-pre-title {
+    margin-bottom: 44px;
+  }
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */

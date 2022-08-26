@@ -1,4 +1,16 @@
 .gallery-pre-title {
   color: #303030;
-  margin-bottom: 44px;
+  margin-bottom: 71px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+  }
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-item {
 }
