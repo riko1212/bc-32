@@ -1,13 +1,13 @@
-.barbers-pre-title {
+.barbers__pre-title {
   color: #303030;
   margin-bottom: var(--typical-mb);
 }
-.barbers-title {
+.barbers__title {
   color: var(--second-title-color);
   margin-bottom: 44px;
 }
 
-.barbers-item-title {
+.card-list__item-title {
   font-weight: 400;
   font-size: 18px;
   line-height: calc(25 / 18);
@@ -17,7 +17,7 @@
   margin-bottom: 8px;
   margin-top: 30px;
 }
-.barbers-item-text {
+.card-list__item-text {
   font-size: 14px;
   line-height: calc(19 / 14);
   text-align: center;
@@ -26,24 +26,24 @@
   margin-bottom: 30px;
 }
 
-.barbers-list {
+.card-list {
   display: flex;
   column-gap: 30px;
   row-gap: 50px;
   flex-wrap: wrap;
 }
 
-.barbers-item {
+.card-list__item {
   width: calc((100% - 60px) / 3);
   position: relative;
 }
 
-.barbers-top-wrap {
+.card-list__top-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.barbers-top-text {
+.card-list__top-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -55,18 +55,18 @@
   height: 100%;
   transform: translateY(100%);
   transition: transform 300ms linear;
-  .barbers-item:hover &,
-  .barbers-item:focus & {
+  .card-list__item:hover &,
+  .card-list__item:focus & {
     transform: translateY(0);
   }
 }
 
-.barbers-soc-list {
+.media {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.barbers-soc-link {
+.media__link {
   width: 44px;
   height: 44px;
   background-color: tomato;

@@ -6,21 +6,21 @@
   padding-bottom: 32px;
 }
 
-.header-container {
+.header__container {
   @extend %align-list;
 }
 
-.header-logo {
+.header__logo {
   margin-right: 130px;
 }
 
-.header-list {
+.navigation__list {
   display: flex;
   gap: 30px;
 }
 
-.header-link,
-.header-tel {
+.navigation__link,
+.connect__tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -28,12 +28,12 @@
   color: #ffffff;
 }
 
-.header-link:hover,
-.header-link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--accent-color);
 }
 
-.header-connect {
+.header__connect {
   margin-left: auto;
 }
 
@@ -45,7 +45,7 @@
   color: #ffffff;
 } */
 
-.header-btn {
+.connect__btn {
   color: var(--first-btn-color);
   margin-left: 31px;
 }
