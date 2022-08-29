@@ -29,6 +29,10 @@ body {
   pointer-events: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
